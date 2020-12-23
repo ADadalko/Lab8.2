@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script data-main="js/init" src="js/library/require.js"></script>
+    <title>Форма</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+    <label for="text1">Имя:
+      <input type="text" name="text1" maxlength="25" size="25" id="name"
+    /></label>
+    <label for="text2">Фамилия:
+      <input type="text" name="text2" maxlength="25" size="25" id="secondName"
+    /></label>
+    <label for="text3">Отчество:
+      <input type="text" name="text3" maxlength="25" size="25" id="thirdName"
+    /></label>
+    <label for="text4">Национальность:
+      <input type="text" name="text4" maxlength="25" size="25" id="nationality"
+    /></label>
+    <label for="text5">Страна проживания:
+      <input type="text" name="text5" maxlength="25" size="25" id="country"
+    /></label>
+    <label for="list">Возраст:
+      <select name="list" id="select">
+        <option>До 18</option>
+        <option>18-30</option>
+        <option>30-50</option>
+        <option>50+</option>
+      </select>
+    </label>
+    <label for="radio1">
+      Пол:
+      Мужской
+      <input type="radio" name="radio1" id="radio1">
+    </label>
+    <label for="radio2">Женский:<input type="radio" name="radio2" id="radio2"></label>
+    <label for="check1">Пользовательское соглашение:<input type="checkbox" name="check1" id="check1"></label>
+    <label for="check2">Присылать ли уведомления:<input type="checkbox" name="check2" id="check2"></label>
+    <button type="submit">Отправить</button>
+  </form>
+    <button onclick="f1();">Считать информацию из файлов</button>
+    <p id="p">
+
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
